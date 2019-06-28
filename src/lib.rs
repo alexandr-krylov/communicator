@@ -1,9 +1,10 @@
-mod client;
+pub mod client;
 
-mod network;
+pub mod network;
 
 #[cfg(test)]
 mod tests {
+    use super::client;
     #[test]
     fn it_works() {
         client::connect();
